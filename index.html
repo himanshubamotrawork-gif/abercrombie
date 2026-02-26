@@ -4,7 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abercrombie & Fitch – $500 Shopping Card</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DRTCQ7GR8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+gtag('config', 'G-6DRTCQ7GR8', {
+  debug_mode: true
+});
+</script>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -276,7 +287,7 @@
       <li><span class="step-num">3</span><span>Complete 4–5 partner offers</span></li>
       <li><span class="step-num">4</span><span>Get a chance to win rewards</span></li>
     </ul>
- <button class="cta-btn" onclick="window.open('https://glctrk.org/aff_c?offer_id=3865&aff_id=17763', '_blank')">Continue</button>
+<button class="cta-btn" onclick="window.open('https://glctrk.org/aff_c?offer_id=3865&aff_id=17763', '_blank')">Continue</button>
     <p class="cta-note">Complete 4–5 partner offers to finish the review process</p>
   </div>
     <div class="avail-box">
@@ -379,6 +390,20 @@
     });
   });
 </script>
+<script>
+  function redirect() {
 
+    gtag('event', 'cta_click', {
+      event_category: 'engagement',
+      event_label: 'Abercrombie Gift Card CTA',
+      value: 1,
+      debug_mode: true,
+      event_callback: function() {
+        window.location.href = "https://glctrk.org/aff_c?offer_id=3865&aff_id=17763";
+      }
+    });
+
+  }
+</script>
 </body>
 </html>
