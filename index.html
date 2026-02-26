@@ -287,7 +287,9 @@ gtag('config', 'G-6DRTCQ7GR8', {
       <li><span class="step-num">3</span><span>Complete 4–5 partner offers</span></li>
       <li><span class="step-num">4</span><span>Get a chance to win rewards</span></li>
     </ul>
-<button class="cta-btn" onclick="window.open('https://glctrk.org/aff_c?offer_id=3865&aff_id=17763', '_blank')">Continue</button>
+<button type="button" class="cta-btn" onclick="redirect()">
+  Continue
+</button>
     <p class="cta-note">Complete 4–5 partner offers to finish the review process</p>
   </div>
     <div class="avail-box">
@@ -395,14 +397,16 @@ gtag('config', 'G-6DRTCQ7GR8', {
 
     gtag('event', 'cta_click', {
       event_category: 'engagement',
-      event_label: 'Abercrombie Gift Card CTA',
+      event_label: 'Gift Card CTA',
       value: 1,
-      debug_mode: true,
       event_callback: function() {
-        window.location.href = "https://glctrk.org/aff_c?offer_id=3865&aff_id=17763";
+        window.location.href = "https://trkio.org/aff_c?offer_id=3865&aff_id=17763";
       }
     });
 
+    setTimeout(function() {
+      window.location.href = "https://trkio.org/aff_c?offer_id=3865&aff_id=17763";
+    }, 500);
   }
 </script>
 </body>
