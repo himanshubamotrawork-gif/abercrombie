@@ -17,255 +17,197 @@ gtag('config', 'G-6DRTCQ7GR8', {
 </script>
  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    background: #e8eaed;
-    font-family: 'Barlow', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 16px 60px;
-  }
+body {
+  background: #f5f3ef;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px 60px;
+}
 
-  .card {
-    background: #fff;
-    border-radius: 16px;
-    width: 100%;
-    max-width: 460px;
-    overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-  }
+/* Main Card */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 460px;
+  overflow: hidden;
+  box-shadow: 0 6px 28px rgba(28, 43, 58, 0.08);
+  border: 1px solid #ece8e1;
+}
 
-  /* Header - A&F navy */
-  .header {
-    background: #1c2b3a;
-    padding: 28px 24px 24px;
-    text-align: center;
-    position: relative;
-  }
-  .header .brand-sub {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: rgba(255,255,255,0.5);
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-  .header .logo {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 42px;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: 3px;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-  .header .logo span {
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
+/* Premium Navy Header */
+.header {
+  background: #1d3143;
+  padding: 26px 24px;
+  text-align: center;
+}
 
-  /* Body */
-  .body {
-    padding: 28px 24px 32px;
-  }
+.header .logo {
+  font-size: 34px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
 
-  .prize {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .prize h1 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 52px;
-    font-weight: 800;
-    color: #1c2b3a;
-    line-height: 1.1;
-  }
-  .prize .subtitle {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: #1c2b3a;
-    margin-top: 6px;
-    text-transform: uppercase;
-  }
+/* Body */
+.body {
+  padding: 28px 24px 32px;
+}
 
-  /* Info box */
-  .info-box {
-    border: 1.5px solid #d0d8e8;
-    border-radius: 10px;
-    padding: 18px 20px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  .info-box p {
-    font-size: 14px;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 12px;
-  }
-  .info-box p strong { color: #1c2b3a; }
-  .info-box .disclaimer {
-    font-size: 12px;
-    color: #8a94a8;
-    line-height: 1.5;
-    margin-bottom: 0;
-  }
+.prize {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  /* Steps */
-  .steps {
-    list-style: none;
-    margin-bottom: 24px;
-  }
-  .steps li {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 10px 0;
-  }
-  .step-num {
-    min-width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: #1c2b3a;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .steps li span {
-    font-size: 15px;
-    color: #222;
-    font-weight: 500;
-  }
+.prize h1 {
+  font-size: 46px;
+  font-weight: 800;
+  color: #1d3143;
+}
 
-  /* Availability box */
-  .avail-box {
-    border: 1.5px solid #d0d8e8;
-    border-radius: 10px;
-    padding: 18px 20px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .avail-box .label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 10px;
-  }
-  .avail-box .countries {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 10px;
-  }
-  .flag-box {
-    background: #2a2a2a;
-    border-radius: 8px;
-    width: 52px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .flag-box svg {
-    border-radius: 3px;
-    display: block;
-  }
-  .avail-box .fine {
-    font-size: 12px;
-    color: #8a94a8;
-  }
+.prize .subtitle {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #5b6470;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
 
-  /* CTA */
-  .cta-btn {
-    display: block;
-    width: 100%;
-    background: #1c2b3a;
-    color: #fff;
-    font-family: 'Barlow', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 18px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    letter-spacing: 0.5px;
-    transition: background 0.2s;
-    margin-bottom: 12px;
-  }
-  .cta-btn:hover { background: #253648; }
+/* Steps */
+.steps {
+  list-style: none;
+  margin-bottom: 24px;
+}
 
-  .cta-note {
-    text-align: center;
-    font-size: 12px;
-    color: #8a94a8;
-  }
+.steps li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+}
 
-  /* FAQ Section */
-  .faq-card {
-    background: #fff;
-    border-radius: 16px;
-    width: 100%;
-    max-width: 460px;
-    margin-top: 16px;
-    padding: 28px 24px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-  }
-  .faq-card h2 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 22px;
-    font-weight: 800;
-    color: #1c2b3a;
-    margin-bottom: 16px;
-  }
-  .faq-item {
-    border-top: 1px solid #e8eaed;
-    cursor: pointer;
-  }
-  .faq-item:last-child { border-bottom: 1px solid #e8eaed; }
-  .faq-q {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1c2b3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-    user-select: none;
-  }
-  .faq-icon {
-    font-size: 22px;
-    font-weight: 300;
-    color: #8a94a8;
-    line-height: 1;
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-    margin-left: 10px;
-  }
-  .faq-item.open .faq-icon {
-    transform: rotate(45deg);
-    color: #1c2b3a;
-  }
-  .faq-a {
-    font-size: 13.5px;
-    color: #555;
-    line-height: 1.7;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease, padding-bottom 0.3s ease;
-    padding-bottom: 0;
-  }
-  .faq-item.open .faq-a {
-    max-height: 300px;
-    padding-bottom: 16px;
-  }
+.step-num {
+  min-width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #1d3143;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps li span {
+  font-size: 15px;
+  color: #2a2f36;
+  font-weight: 500;
+}
+
+/* CTA */
+.cta-btn {
+  display: block;
+  width: 100%;
+  background: #1d3143;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 12px;
+}
+
+.cta-btn:hover {
+  background: #162636;
+}
+
+.cta-note {
+  text-align: center;
+  font-size: 12px;
+  color: #7b8088;
+}
+
+/* Availability Box */
+.avail-box {
+  border-top: 1px solid #ece8e1;
+  padding: 24px;
+  text-align: center;
+}
+
+.avail-box .label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1d3143;
+}
+
+.avail-box .fine {
+  font-size: 12px;
+  color: #7b8088;
+}
+
+/* FAQ */
+.faq-card {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 460px;
+  margin-top: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 6px 28px rgba(28, 43, 58, 0.08);
+  border: 1px solid #ece8e1;
+}
+
+.faq-card h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1d3143;
+  margin-bottom: 16px;
+}
+
+.faq-item {
+  border-top: 1px solid #ece8e1;
+  cursor: pointer;
+}
+
+.faq-item:last-child { border-bottom: 1px solid #ece8e1; }
+
+.faq-q {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  color: #2a2f36;
+}
+
+.faq-icon {
+  font-size: 18px;
+  color: #1d3143;
+}
+
+.faq-a {
+  font-size: 13px;
+  color: #666d75;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.faq-item.open .faq-a {
+  max-height: 200px;
+  padding-bottom: 16px;
+}
 </style>
 </head>
 <body>
@@ -400,12 +342,12 @@ gtag('config', 'G-6DRTCQ7GR8', {
       event_label: 'Gift Card CTA',
       value: 1,
       event_callback: function() {
-        window.location.href = "https://trkio.org/aff_c?offer_id=3865&aff_id=17763";
+        window.location.href = "https://linkthem.net/aff_c?offer_id=3865&aff_id=17763";
       }
     });
 
     setTimeout(function() {
-      window.location.href = "https://trkio.org/aff_c?offer_id=3865&aff_id=17763";
+      window.location.href = "https://linkthem.net/aff_c?offer_id=3865&aff_id=17763";
     }, 100);
   }
 </script>
